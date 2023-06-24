@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/parsita-{{ version }}.tar.gz
-  sha256: 054e99cba60dce12b047ccf2740f856c5055c3ec66cdc6c4423f6deaec3c6134
+  sha256: 30e149d3b17113de63f0e049c36ca56e3002d57c89668c19adb6a0d16dbaab9d
 
 build:
   noarch: python
