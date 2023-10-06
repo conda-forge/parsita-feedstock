@@ -1,5 +1,5 @@
 {% set name = "parsita" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/parsita-{{ version }}.tar.gz
-  sha256: a1cecd0094aea45b6735740d20b1d41617d50736a1ef4c84eca0cd5a3c246285
+  sha256: ebef0f26ee8c3ce6d7e217d98f0a802e6df7825004b2e7b373a43aa6808ad4f7
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - returns >=0.20.0,<0.21
+    - returns >=0.20.0,<0.23
 
 test:
   requires:
