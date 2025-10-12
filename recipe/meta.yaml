@@ -1,5 +1,5 @@
 {% set name = "parsita" %}
-{% set version = "2.2.2" %}
+{% set version = "2.2.3" %}
 {% set python_version = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/parsita-{{ version }}.tar.gz
-  sha256: 665e669e2277abccf83dba07603254d40668df039ebe8501f5729f1a32fc7fce
+  sha256: d0a009c0efab78b56445c4236874277930d723b0b06599e9019eee1ab3de4b7e
 
 build:
   noarch: python
