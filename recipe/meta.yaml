@@ -1,5 +1,5 @@
 {% set name = "parsita" %}
-{% set version = "2.2.2" %}
+{% set version = "2.2.4" %}
 {% set python_version = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/parsita-{{ version }}.tar.gz
-  sha256: 665e669e2277abccf83dba07603254d40668df039ebe8501f5729f1a32fc7fce
+  sha256: d9615df5bdc2c8354ba7918f9be0a81cd121113e0f5a4da3247ec3927babf5cd
 
 build:
   noarch: python
@@ -18,11 +18,11 @@ build:
 requirements:
   host:
     - python {{ python_version }}
-    - poetry-core >=1.0.0
+    - uv-build >=0.8,<0.9
     - pip
   run:
     - python >={{ python_version }}
-    - returns >=0.20.0,<0.24
+    - returns >=0.20.0,<0.27
 
 test:
   requires:
