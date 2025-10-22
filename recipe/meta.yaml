@@ -18,11 +18,11 @@ build:
 requirements:
   host:
     - python {{ python_version }}
-    - poetry-core >=1.0.0
+    - uv-build >=0.8,<0.9
     - pip
   run:
     - python >={{ python_version }}
-    - returns >=0.20.0,<0.24
+    - returns >=0.20.0,<0.27
 
 test:
   requires:
